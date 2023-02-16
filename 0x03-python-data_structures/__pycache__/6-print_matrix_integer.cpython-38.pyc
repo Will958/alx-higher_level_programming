@@ -1,0 +1,16 @@
+# uncompyle6 version 3.5.0
+# Python bytecode 3.8 (3413)
+# Decompiled from: Python 2.7.5 (default, Nov 16 2020, 22:23:17) 
+# [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+# Embedded file name: /mnt/c/Users/user/Desktop/ALX/Gitprojects/alx-higher_level_programming/0x03-python-data_structures/6-print_matrix_integer.py
+# Size of source mod 2**32: 283 bytes
+
+
+def print_matrix_integer(matrix=[[]]):
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            print(('{:d}'.format(matrix[i][j])), end='')
+            if j != len(matrix[i]) - 1:
+                print(' ', end='')
+
+        print('')
