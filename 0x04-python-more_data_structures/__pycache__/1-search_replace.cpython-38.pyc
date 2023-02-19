@@ -1,0 +1,15 @@
+# uncompyle6 version 3.5.0
+# Python bytecode 3.8 (3413)
+# Decompiled from: Python 2.7.5 (default, Nov 16 2020, 22:23:17) 
+# [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+# Embedded file name: /mnt/c/Users/user/Desktop/ALX/Gitprojects/alx-higher_level_programming/0x04-python-more_data_structures/1-search_replace.py
+# Size of source mod 2**32: 215 bytes
+
+
+def search_replace(my_list, search, replace):
+    new_list = my_list[:]
+    for i in range(len(new_list)):
+        if new_list[i] == search:
+            new_list[i] = replace
+
+    return new_list
